@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/62d04f96918283ca2261f763
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Jesse Fredrick",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+DELETE http://localhost:3000/subscribers/62d04f96918283ca2261f763
+
+###
+PATCH http://localhost:3000/subscribers/62d065a07577d52592fd3b7f
+Content-Type: application/json
+
+{
+    "name": "David King"
+}
